@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- <head> -->
+    <%- include('components/head') -%>
+    <!-- </head> -->
+    <body id="error_page">
+        <%- include('components/loader') -%>
+        <%- include('components/header') -%>
+
+        <!-- start erroe area -->
+        <section class="error_area text-center">
+            <div class="container">
+                <div class="error margin-tb-170">
+                    <p>404</p>
+                    <div class="section_title nice_title">
+                        <h3>Page introuvable</h3>
+                    </div>
+                    <a href="/" class="btn btn-warning btn-lg">Revenir sur la page d'accueil</a>
+                </div>
+            </div>
+        </section>
+        <!-- end error area -->
+
+        <%- include('components/footer') -%>
+    </body>
+</html>

@@ -1,0 +1,290 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- <head> -->
+    <%- include('components/head') -%>
+    <!-- </head> -->
+    <body id="home">
+        <%- include('components/loader') -%>
+        <%- include('components/header') -%>
+
+        <!-- start main slider -->
+        <div class="main_slider_area">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="main_slider" id="slider_rev">
+                        <div class="fullwidthbanner-container" >
+                            <div class="fullwidth_home_two_banner">
+                                <ul>
+                                    <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+                                        <img src="img/rev-slider/slider-one.jpg" alt="slide" >
+                                        <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
+                                            style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                                            Réservez dans les meilleurs hôtels
+                                        </div>
+                                        <div class="tp-caption large_black sfr" data-x="105" data-y="255" data-speed="1500" data-start="1400" data-easing="easeInOutBack"
+                                            style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                                            du monde
+                                        </div>
+                                        <div class="tp-caption lfb carousel-caption-inner" data-x="105" data-y="313" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
+                                            style="background: #f7c411; padding: 10px; cursor: pointer;">
+                                            <a href="#" class="" style="background: #f7c411; border-radius: 0; color: #313a45; display: inline-block;  font-size: 18px; padding: 8px 34px; text-transform: uppercase; border: 1px solid #9e811a;">Explorez</a>
+                                        </div>
+                                    </li>
+                                    <li data-transition="random" data-slotamount="7" data-masterspeed="1000">
+                                        <img src="img/rev-slider/slider-one.jpg" alt="slide" >
+                                        <div class="tp-caption large_black sfr" data-x="105" data-y="197" data-speed="1200" data-start="1100" data-easing="easeInOutBack"
+                                            style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                                            Trouvez les meilleures offres
+                                        </div>
+                                        <div class="tp-caption large_black sfr" data-x="105" data-y="255" data-speed="1500" data-start="1400" data-easing="easeInOutBack"
+                                            style="font-family: 'Playfair Display', serif; font-size: 48px;color: #131e2a; margin-bottom: 23px; text-transform: uppercase; line-height: 40px;">
+                                            pour vos vacances
+                                        </div>
+                                        <div class="tp-caption lfb carousel-caption-inner" data-x="105" data-y="313" data-speed="1300" data-start="1700" data-easing="easeInOutBack" 
+                                            style="background: #f7c411; padding: 10px; cursor: pointer;">
+                                            <a href="#" class="" style="background: #f7c411; border-radius: 0; color: #313a45; display: inline-block;  font-size: 18px; padding: 8px 34px; text-transform: uppercase; border: 1px solid #9e811a;">Explorez</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <!-- start hotel booking -->
+                        <div class="hotel_booking_area">
+                            <div class="container">
+                                <div class="hotel_booking">
+                                    <form id="form1" role="form" action="#" class="">
+                                        <div class="col-lg-2 col-md-2 col-sm-2">
+                                            <div class="room_book border-right-dark-1">
+                                                <h6>Trouvez votre </h6>
+                                                <p>hôtel</p>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-2 col-md-2 col-sm-2">
+                                            <div class="input-group border-bottom-dark-2">
+                                                <input class="date-picker" id="datepicker" placeholder="Arrivée" type="text"/>
+                                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="form-group col-lg-2 col-md-2 col-sm-2">
+                                            <div class="input-group border-bottom-dark-2">
+                                                <input class="date-picker" id="datepicker1" placeholder="Départ" type="text"/>
+                                                <div class="input-group-addon"><i class="fa fa-calendar"></i></div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6 col-md-6 col-sm-6">
+                                            <div class="row">
+                                                <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
+                                                    <div class="input-group border-bottom-dark-2">
+                                                        <select class="form-control" name="room" id="room">
+                                                          <option selected="selected" disabled="disabled">1 Chambre</option>
+                                                          <option value="Single">1 Chambre</option>
+                                                          <option value="Double">2 Chambres</option>
+                                                          <option value="Deluxe">3 Chambres</option>
+                                                          <option value="More">Plus</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
+                                                    <div class="input-group border-bottom-dark-2">
+                                                        <select class="form-control" name="room" id="adult">
+                                                          <option selected="selected" disabled="disabled">1 Adulte</option>
+                                                          <option value="Single">1 Adulte</option>
+                                                          <option value="Double">2 Adultes</option>
+                                                          <option value="Deluxe">3 Adultes</option>
+                                                          <option value="More">Plus</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="form-group col-lg-3 col-md-3 col-sm-3 icon_arrow">
+                                                    <div class="input-group border-bottom-dark-2">
+                                                        <select class="form-control" name="room" id="child">
+                                                          <option selected="selected" disabled="disabled">0 Enfant</option>
+                                                          <option value="Single">0 Enfant</option>
+                                                          <option value="Double">1 Enfant</option>
+                                                          <option value="Deluxe">2 Enfants</option>
+                                                          <option value="More">Plus</option>
+                                                        </select>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-3 col-md-3 col-sm-3">
+                                                    <a class="btn btn-warning btn-md floatright">Réserver</a>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </form>
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end hotel booking -->
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- end main slider -->
+
+        <!-- start welcome section -->
+        <section class="another_facitilies_area">
+            <div class="container">
+                <div class="another_facitilies clearfix padding-bottom-100">
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="single_facities">
+                            <a href="#"><img src="https://fakeimg.pl/300/" alt=""></a>
+                            <h6>Restaurant</h6>
+                            <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia. vitae molestie interdum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="single_facities">
+                            <a href="#"><img src="https://fakeimg.pl/300/" alt=""></a>
+                            <h6>Sports Club</h6>
+                            <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia.  vitae molestie interdum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="single_facities">
+                            <a href="#"><img src="https://fakeimg.pl/300/" alt=""></a>
+                            <h6>Pick up</h6>
+                            <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia.  vitae molestie interdum.</p>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-3 col-sm-3">
+                        <div class="single_facities">
+                            <a href="#"><img src="https://fakeimg.pl/300/" alt=""></a>
+                            <h6>BAR</h6>
+                            <p>Semper ac dolor vitae accumsan. Cras interdum hendrerit lacinia.  vitae molestie interdum.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end welcome section -->
+
+         <!-- start Hotel Facilities section -->
+         <section class="select_room_area padding-top-90">
+            <div class="container">
+                <div class="row">
+                    <div class="select_room clearfix">
+                        <div class="section_title nice_title content-center">
+                            <h3>Select Your Room</h3>
+                        </div>
+                        <div class="select_room_content clearfix">
+                            <div class="col-lg-8 col-md-8 col-sm-8 col-xs-12">
+                                <div class="room_thumb">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt=""></a>
+                                    <div class="room_details">
+                                        <div class="about_room floatleft">
+                                            <div class="room_quality floatleft">
+                                                <h5>Deluxe Room</h5>
+                                            </div>
+                                            <div class="room_rent floatleft">
+                                                <p>$180<span> / night</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="room_block floatright">
+                                            <a href="#" class="btn btn-black">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-4 col-md-4 col-sm-4 col-sx-12">
+                                <div class="room_thumb small_room_thumb margin-bottom-35">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt=""></a>
+                                    <div class="room_details">
+                                        <div class="about_room floatleft">
+                                            <div class="room_quality floatleft">
+                                                <h5>Deluxe Room</h5>
+                                            </div>
+                                            <div class="room_rent floatleft">
+                                                <p>$180<span> / night</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="room_block floatright">
+                                            <a href="#" class="btn btn-black">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="room_thumb small_room_thumb">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt=""></a>
+                                    <div class="room_details">
+                                        <div class="about_room floatleft">
+                                            <div class="room_quality floatleft">
+                                                <h5>Deluxe Room</h5>
+                                            </div>
+                                            <div class="room_rent floatleft">
+                                                <p>$180<span> / night</span></p>
+                                            </div>
+                                        </div>
+                                        <div class="room_block floatright">
+                                            <a href="#" class="btn btn-black">Book</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-lg-12 col-md-12 col-sm-12 col-sx-12">
+                                <div class="view_all_rooms text-center  padding-bottom-90  padding-top-90">
+                                    <a href="#" class="btn btn-warning">View All Rooms</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Hotel Facilities section -->
+        
+        <!-- start Hotel Showcase section -->
+        <section class="hotel_showcase_area margin-bottom-128 margin-top-110">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="hotel_showcase">
+                        <div class="section_title nice_title content-center">
+                            <h3>Hotel Showcase</h3>
+                        </div>
+                        <div class="section_content">
+                            <div class="showcase_slider">
+                                <div class="item">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt="img">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt="img">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt="img">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt="img">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt="img">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt="img">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                                <div class="item">
+                                    <a href="#"><img src="https://fakeimg.pl/300/" alt="img">
+                                        <i class="fa fa-search"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- end Hotel Showcase section -->
+
+        <%- include('components/footer') -%>
+    </body>
+</html>
