@@ -10,6 +10,14 @@ dotenv.config();
 const PORT = process.env.PORT || 3000;
 const app = express();
 
+
+// init the database access
+mongoose.connect(process.env.MONGODB, {
+    useNewUrlParser: true,
+    useUnifiedTopology: true,
+    useFindAndModify: false
+});
+
 // static files
 app.use(express.static(path.join(__dirname, 'public')));
 app.use('/css', express.static(__dirname + 'public/css'));

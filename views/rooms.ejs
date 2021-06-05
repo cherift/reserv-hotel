@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <!-- <head> -->
+    <%- include('components/head') -%>
+    <!-- </head> -->
+    <body id="accomodation_page">
+        <%- include('components/loader') -%>
+        <%- include('components/header') -%>
+
+        <!-- start breadcrumb -->
+        <section class="breadcrumb_main_area margin-bottom-30">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="breadcrumb_main nice_title">
+                        <h2>Nos hôtels</h2>
+                        <!-- special offer start -->
+                        <div class="special_offer_main">
+                            <div class="container">
+                                <div class="special_offer_sub"></div>
+                            </div>
+                        </div>         
+                        <!-- end offer start -->
+                    </div>
+                </div>
+            </div>            
+        </section>
+        <!-- end breadcrunb -->
+
+        <!-- start other detect room section -->
+        <section class="other_room_area">
+            <div class="container">
+                <div class="row">
+                    <div class="other_room">
+                        <div class="section_content">
+                            <!-- start single room details -->
+                            <div class="accomodation_single_room">
+                                <div class="container">
+                                    <div class="row">
+                                        <% for (let room of rooms) { %>
+                                            <div class="col-lg-3 col-md-3 col-sm-3">
+                                                <div class="single_room_wrapper clearfix padding-bottom-30">
+                                                    <figure class="uk-overlay uk-overlay-hover">
+                                                        <div class="room_media">
+                                                            <a href="/room?id=<%= room.id %>"><img src="<%= room.images[0].url %>" alt="<%= room.images[0].alt %>"></a>
+                                                        </div>
+                                                        <div class="room_title border-bottom-whitesmoke clearfix">
+                                                                <div class="left_room_title floatleft">
+                                                                    <h6><%= room.name %></h6>
+                                                                    <p><%= room.price %>GNF/<span>nuit</span></p>
+                                                                </div>
+                                                                <div class="left_room_title floatright">
+                                                                    <a href="/room?id=<%= room.id %>" class="btn">Réserver</a>
+                                                                </div>
+                                                            </div>
+                                                        <div class="uk-overlay-panel uk-overlay-background single_wrapper_details clearfix animated bounceInDown">
+                                                            <div class="border-dark-1 padding-22 clearfix single_wrapper_details_pad">
+                                                                <h5><%= room.name %> - <%= room.country %></h5>
+                                                                <p>
+                                                                    <%= room.description %>
+                                                                </p>
+                                                                <div class="single_room_cost clearfix">
+                                                                    <div class="floatleft">
+                                                                        <p><%= room.price %>GNF/<span>nuit</span></p>
+                                                                    </div>
+                                                                    <div class="floatright">
+                                                                        <a href="/room?id=<%= room.id %>" class="btn">Réserver</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </figure>
+                                                </div>
+                                            </div>
+                                        <% } %>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- end single room details -->
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+        </section>
+        <!-- end other detect room section -->
+
+        <%- include('components/footer') -%>
+    </body>
+</html>

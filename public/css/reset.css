@@ -896,11 +896,6 @@ h6{
 .breadcrumb_main .special_offer_main .container {
   position: relative;
 }
-.special_offer_sub > img {
-  position: absolute;
-  right: 0;
-  top: 0;
-}
 
 
 /* ------------------------------------
@@ -1019,35 +1014,3 @@ a.btn.btn-black {
 }
 
 
-@media only screen and (max-width: 767px) {
-
-
-
-.special_offer_sub > img {
-  height: auto;
-  position: absolute;
-  right: calc(50% - 117px);
-  top: 0;
-  width: 150px;
-}
-
-
-
-
-}
-
-
-
-@media only screen and (min-width: 480px) and (max-width: 767px) {
-
-
-.special_offer_sub > img {
-  height: auto;
-  position: absolute;
-  right: calc(50% - 138px);
-  top: 0;
-  width: 150px;
-}
-
-
-}
