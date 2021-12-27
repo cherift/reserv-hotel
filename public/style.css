@@ -57,7 +57,7 @@ a:hover{
   left: 100%;
   position: absolute;
   top: 0;
-  width: 10000%;
+  width: auto;
 }
 body#home_one .emergency_number, body#home_one .emergency_number::after{
 	background: #3ac4fa none repeat scroll 0 0;
