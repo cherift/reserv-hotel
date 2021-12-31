@@ -222,9 +222,6 @@ form#form1 .form-group {
 	text-transform: uppercase;
 	width: 100%;
 }
-.hotel_booking_area select#room{
-
-}
 .form-control:focus{
 	box-shadow: none;
 }
@@ -497,6 +494,19 @@ body#home .select_room .small_room_thumb .room_rent > p, body#accomodation_page 
 body#home .select_room .room_rent > p > span, body#accomodation_page .select_room .room_rent > p > span{
 	font-size: 11px;
 	color: #6c737a;
+}
+body#home .video-components {
+	display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+@media screen and (max-width: 1200px) {
+	body#home .video-components div:nth-child(2) {
+		margin: 25px 0 25px 0;
+	} 
 }
 
 
